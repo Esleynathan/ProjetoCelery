@@ -7,7 +7,7 @@ app = Celery('projeto_celery')
 
 app.config_from_object('django.conf.settings', namespace='CELERY')
 
-app.autodiscover_task()
+app.autodiscover_tasks()
 
 @app.task(bind=True)
 def debug_task (self):

@@ -135,7 +135,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DEFAULT_FROM_EMAIL = 'Esley Nathan | Curso Pythonando'
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST_USER = 'esleynathan@hotmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = 'nego.elliot3.'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.office365.com'
@@ -145,7 +145,7 @@ EMAIL_HOST = 'smtp.office365.com'
 
 CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
 
-CELERY_ACCEPT_COUNTENT = ['json']
+CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_CONTENT = 'json'
 
-CELER_RESULT_BACKEND = 'django-db'
+CELERY_RESULT_BACKEND = 'django-db'
