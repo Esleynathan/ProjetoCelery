@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'inscricao',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,13 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.office365.com'
+
+
+# CELERY
+
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+
+CELERY_ACCEPT_COUNTENT = ['json']
+CELERY_TASK_CONTENT = 'json'
+
+CELER_RESULT_BACKEND = 'django-db'
